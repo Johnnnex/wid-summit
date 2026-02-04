@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { Icon } from '@iconify/react';
 import dynamic from 'next/dynamic';
@@ -14,7 +14,7 @@ const TicketWidget = dynamic(() => import('few-ticket-widget'), {
 	),
 });
 
-const RegistrationModal = () => {
+const RegistrationModalContent = () => {
 	const router = useRouter();
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
@@ -67,6 +67,14 @@ const RegistrationModal = () => {
 				</div>
 			</div>
 		</div>
+	);
+};
+
+const RegistrationModal = () => {
+	return (
+		<Suspense fallback={null}>
+			<RegistrationModalContent />
+		</Suspense>
 	);
 };
 
