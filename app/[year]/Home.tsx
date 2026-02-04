@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Hero, Partner } from '@/components/26';
+import { Hero, Partner, RegistrationModal } from '@/components/26';
 import { Button } from '@/components/shared';
 import { cn } from '@/lib/utils';
 import { Icon } from '@iconify/react';
@@ -102,6 +102,8 @@ const Home = () => {
 					</Button>
 				</div>
 			</section>
+
+			<RegistrationModal />
 		</>
 	);
 };

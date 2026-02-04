@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { Icon } from '@iconify/react';
 import dynamic from 'next/dynamic';
 
@@ -16,6 +16,7 @@ const TicketWidget = dynamic(() => import('few-ticket-widget'), {
 
 const RegistrationModal = () => {
 	const router = useRouter();
+	const pathname = usePathname();
 	const searchParams = useSearchParams();
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -26,22 +27,19 @@ const RegistrationModal = () => {
 	const closeModal = () => {
 		setIsOpen(false);
 
-		router.push(window.location.pathname);
+		router.push(pathname);
 	};
 
 	if (!isOpen) return null;
 
 	return (
-		<div className='fixed inset-0 z-[100] flex items-center justify-center px-4 md:px-6 lg:px-20'>
-			{/* Backdrop */}
+		<div className='fixed inset-0 z-100 flex items-center justify-center px-4 md:px-6 lg:px-20'>
 			<div
 				className='absolute inset-0 bg-black/60 backdrop-blur-sm'
 				onClick={closeModal}
 			/>
 
-			{/* Modal */}
-			<div className='relative bg-white rounded-xl md:rounded-[1.25rem] w-full max-w-[90rem] max-h-[90vh] overflow-hidden shadow-2xl'>
-				{/* Header */}
+			<div className='relative bg-white rounded-xl md:rounded-[1.25rem] w-full max-w-360 max-h-[90vh] overflow-hidden shadow-2xl'>
 				<div className='flex items-center justify-between p-4 md:p-6 border-b border-[#0A74EF33]'>
 					<h2 className='text-[1.25rem] md:text-[2rem] font-semibold text-black'>
 						Register for WID Summit &apos;26
@@ -61,7 +59,7 @@ const RegistrationModal = () => {
 				<div className='p-4 md:p-6 overflow-y-auto max-h-[calc(90vh-5rem)]'>
 					<TicketWidget
 						eventSlug='my-event-slug'
-						theme='dark'
+						theme='light'
 						width='100%'
 						height={700}
 						baseUrl='https://fewticket.com'
