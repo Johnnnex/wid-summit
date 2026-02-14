@@ -60,7 +60,7 @@ const Hero = () => {
 						<Button
 							className='w-full md:w-58.25 p-[.75rem_1.5rem] md:p-[1.25rem_2.5rem] text-white border-white text-[0.875rem] md:text-[1rem]'
 							variant='outlined'
-							url='https://docs.google.com/forms/d/e/1FAIpQLSdDZvX-FNFbypb-jLTUhTFHQuFUOArG33CFw6_BaLyNB95zJg/viewform?usp=header'
+							url='https://forms.gle/Bm8fu4BYkGcPQn917'
 						>
 							Become a Volunteer
 						</Button>

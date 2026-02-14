@@ -20,9 +20,9 @@ const RegistrationModalContent = () => {
 	const searchParams = useSearchParams();
 	const [isOpen, setIsOpen] = useState(false);
 
-	useEffect(() => {
-		setIsOpen(searchParams.get('register') === 'true');
-	}, [searchParams]);
+	// useEffect(() => {
+	// 	setIsOpen(searchParams.get('register') === 'true');
+	// }, [searchParams]);
 
 	const closeModal = () => {
 		setIsOpen(false);

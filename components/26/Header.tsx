@@ -34,7 +34,7 @@ const Header = () => {
 		},
 		{
 			name: 'Volunteer',
-			url: 'https://docs.google.com/forms/d/e/1FAIpQLSc_HCCqkbCglgFZEupSSM0RVVRK3KDQ1L7yga_cZx3a4QJGig/viewform?usp=header',
+			url: 'https://forms.gle/Bm8fu4BYkGcPQn917',
 		},
 		{
 			name: 'Schedule',

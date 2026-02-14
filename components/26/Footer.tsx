@@ -90,7 +90,7 @@ const Footer = () => {
 									},
 									{
 										label: 'Volunteer',
-										url: 'https://docs.google.com/forms/d/e/1FAIpQLSdDZvX-FNFbypb-jLTUhTFHQuFUOArG33CFw6_BaLyNB95zJg/viewform?usp=header',
+										url: 'https://forms.gle/Bm8fu4BYkGcPQn917',
 									},
 								],
 							},
