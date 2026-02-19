@@ -58,24 +58,18 @@ const Hero = () => {
 					</div>
 					<div className='flex flex-col md:flex-row items-center gap-3 md:gap-5 lg:gap-10 w-full md:w-fit mx-auto'>
 						<Button
-							className='w-full md:w-58.25 p-[.75rem_1.5rem] md:p-[1.25rem_2.5rem] text-white border-white text-[0.875rem] md:text-[1rem]'
-							variant='outlined'
-							url='https://forms.gle/Bm8fu4BYkGcPQn917'
+							target='_self'
+							url='?register=true'
+							className='w-full md:w-58.25 p-[.75rem_1.5rem] md:p-[1.25rem_2.5rem] text-[0.875rem] md:text-[1rem]'
 						>
-							Become a Volunteer
+							Register Now
 						</Button>
 						<Button
 							url='https://drive.google.com/file/d/1KWj-XmOZk2VpkRpqohnQakMZuM5FlS-9/view?usp=drivesdk'
-							className='w-full md:w-58.25 p-[.75rem_1.5rem] md:p-[1.25rem_2.5rem] text-[0.875rem] md:text-[1rem]'
+							className='w-full md:w-58.25 p-[.75rem_1.5rem] md:p-[1.25rem_2.5rem] text-white! border-white! text-[0.875rem] md:text-[1rem]'
+							variant='outlined'
 						>
 							Become a Sponsor
-						</Button>
-						<Button
-							url='https://docs.google.com/forms/d/e/1FAIpQLSc_HCCqkbCglgFZEupSSM0RVVRK3KDQ1L7yga_cZx3a4QJGig/viewform?usp=header'
-							variant='outlined'
-							className='w-full md:w-58.25 p-[.75rem_1.5rem] md:p-[1.25rem_2.5rem] text-white border-white text-[0.875rem] md:text-[1rem]'
-						>
-							Call for Speakers
 						</Button>
 					</div>
 				</div>

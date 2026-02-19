@@ -20,9 +20,9 @@ const RegistrationModalContent = () => {
 	const searchParams = useSearchParams();
 	const [isOpen, setIsOpen] = useState(false);
 
-	// useEffect(() => {
-	// 	setIsOpen(searchParams.get('register') === 'true');
-	// }, [searchParams]);
+	useEffect(() => {
+		setIsOpen(searchParams.get('register') === 'true');
+	}, [searchParams]);
 
 	const closeModal = () => {
 		setIsOpen(false);
@@ -58,7 +58,7 @@ const RegistrationModalContent = () => {
 
 				<div className='p-4 md:p-6 overflow-y-auto max-h-[calc(90vh-5rem)]'>
 					<TicketWidget
-						eventSlug='my-event-slug'
+						eventSlug='Wid-summit-2026'
 						theme='light'
 						width='100%'
 						height={700}
