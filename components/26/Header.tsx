@@ -92,7 +92,7 @@ const Header = () => {
 						target='_self'
 						url='?register=true'
 					>
-						Register Now
+						Get Your Ticket
 					</Button>
 				</div>
 

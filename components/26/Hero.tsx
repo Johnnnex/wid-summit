@@ -62,7 +62,7 @@ const Hero = () => {
 							url='?register=true'
 							className='w-full md:w-58.25 p-[.75rem_1.5rem] md:p-[1.25rem_2.5rem] text-[0.875rem] md:text-[1rem]'
 						>
-							Register Now
+							Get Your Ticket
 						</Button>
 						<Button
 							url='https://drive.google.com/file/d/1KWj-XmOZk2VpkRpqohnQakMZuM5FlS-9/view?usp=drivesdk'
